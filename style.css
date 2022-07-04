@@ -1,17 +1,17 @@
 * {
     box-sizing: border-box;
+    text-transform: capitalize;
 }
 #content {
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
 }
 h1{
-    text-transform: capitalize;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
 }
 #canvas{
-    width: 100%;
-    height: 600px;
     border: 1px solid black;
+    /*background-color: #000;*/
 }
