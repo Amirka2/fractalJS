@@ -1,3 +1,6 @@
+let canvas = document.getElementById('canvas');
+canvas.width = 1200;
+canvas.height = 700;
 
 function paint(){
     let canvas = document.getElementById('canvas');
@@ -6,7 +9,7 @@ function paint(){
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    drawDragon(canvas, 100, 100, 200, 100, k);
+    drawDragon(canvas, 350, 450, 850, 450, k);
 }
 
 function drawDragon(canvas, x1, y1, x2, y2, k){
@@ -16,6 +19,7 @@ function drawDragon(canvas, x1, y1, x2, y2, k){
         let ctx = canvas.getContext('2d');
         let tx, ty;
         ctx.strokeStyle = color;
+        //ctx.scale(0.1, 0.1);
         ctx.lineWidth = 1;
 
         if(k == 0){
